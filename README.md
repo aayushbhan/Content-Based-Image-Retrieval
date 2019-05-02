@@ -26,7 +26,9 @@ These are the most basic 4 steps of any CBIR system. As they become more complex
 
 
 1.Indexing the dataset and subsequently creating the index.csv file -
+
    python index.py --dataset dataset --index index.csv
 
 2.Searching through the metadata of the dataset with the metadata of the query image-
+
    python search.py --index index.csv --query queries/108100.png --result-path dataset
