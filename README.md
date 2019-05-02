@@ -23,3 +23,10 @@ The 4 Steps of Any CBIR System
 These are the most basic 4 steps of any CBIR system. As they become more complex and utilize different feature representations, the number of steps grow and a substantial number of sub-steps are added to each step mentioned above. For the time being, let’s keep things simple and utilize just these 4 steps.
 
 ![alt text](https://www.researchgate.net/profile/Ahmed_Amin43/publication/310465433/figure/fig1/AS:429744039698434@1479470371504/Block-diagram-of-Content-Based-Image-Retrieval-5.png)
+
+
+1.Indexing the dataset and subsequently creating the index.csv file -
+   python index.py --dataset dataset --index index.csv
+
+2.Searching through the metadata of the dataset with the metadata of the query image-
+   python search.py --index index.csv --query queries/108100.png --result-path dataset
